@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google自動翻譯套件demo2(非下拉式選單)</title>
+</head>
+
+<body>
+    <h1>Google自動翻譯DEMO2 (非下拉式選單)</h1>
+
+
+    <p>
+        氣象專家林得恩表示，今年最強一波梅雨鋒面周三下半天接近，周三至周五全台降雨機會大，發生豪大雨機會也會增加，尤其在中南部山區。
+    </p>
+
+    <p>
+        林得恩在「林老師氣象站」臉書提到，運用歐洲ECMWF今晨最新數值模擬量場結果，進行梅雨鋒面豪雨檢查表的量化評估，從過去的實作經驗，在總數20項的檢查表列項中，通常滿足總數達12項或以上的事件，其可能肇生豪大雨的機會就會升高。
+    </p>
+
+
+    <!-- google自動翻譯語言選單 -->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+        window.googleTranslateElementInit = function () {
+            new window.google.translate.TranslateElement({
+                pageLanguage: 'zh-TW',
+                layout: window.google.translate.TranslateElement.InlineLayout.SIMPLE
+            }, 'google_translate_element')
+        }
+    </script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</body>
+
+</html>
